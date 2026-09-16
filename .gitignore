@@ -1,0 +1,16 @@
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Editor and IDE files
+.vscode/
+.idea/
+
+# PHP temporary files
+*.log
+
+# Local database configuration
+config/database.php
+
+# Uploaded user photos
+public/images/uploads/*
