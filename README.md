@@ -99,6 +99,16 @@ Routes are handled by the custom manual router in:
 
 core/Router.php
 
+
+## Running the Application
+
+For a local Apache installation, the application can be accessed through:
+
+http://localhost/Php-Course/Alzikrayat/public/
+
+The `public/` directory is the application's web-accessible entry point.
+
+
 ## Author
 
 fofaJourge
