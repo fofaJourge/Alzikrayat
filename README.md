@@ -42,6 +42,21 @@ models/
 views/
 public/
 
+
+## Features
+
+- User registration with validation.
+- Secure user login and logout.
+- Session-based authentication.
+- Last-login tracking using a browser cookie.
+- Multiple photo uploads for authenticated users.
+- Responsive photo gallery.
+- Detailed photo pages with author and upload information.
+- Owner-only photo deletion.
+- Comments on photos for authenticated users.
+- Dynamic navigation based on authentication status.
+
+
 ## Security
 
 The application includes:
