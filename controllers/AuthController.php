@@ -326,6 +326,7 @@ class AuthController extends Controller
                 'expires' => time() + (7 * 24 * 60 * 60),
                 'path' => '/',
                 'httponly' => true,
+                'secure' => (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off'),
                 'samesite' => 'Lax'
             ]
         );
