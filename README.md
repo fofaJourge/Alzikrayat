@@ -57,6 +57,17 @@ public/
 - Dynamic navigation based on authentication status.
 
 
+## Project Structure
+
+- `config/` - Database configuration and configuration templates.
+- `core/` - Core MVC classes, including the router, base model, and base controller.
+- `controllers/` - Application controllers that handle requests and business logic.
+- `models/` - Database models that interact with MySQL.
+- `views/` - Presentation layer containing the application's PHP views.
+- `public/` - Web-accessible files and the application's front controller.
+- `public/images/uploads/` - Directory used for uploaded photos.
+
+
 ## Security
 
 The application includes:
