@@ -11,6 +11,16 @@
  */
 
 /*
+ * Add basic HTTP security headers.
+ *
+ * These headers instruct the browser to apply safer defaults when
+ * displaying and communicating with the application.
+ */
+header('X-Content-Type-Options: nosniff');
+header('X-Frame-Options: SAMEORIGIN');
+header('Referrer-Policy: strict-origin-when-cross-origin');
+
+/*
  * Start a PHP session only when one is not already active.
  *
  * This prevents the "session_start(): Ignoring session_start()
@@ -94,4 +104,3 @@ $router->dispatch(
     $_SERVER['REQUEST_METHOD'],
     $requestPath
 );
-
