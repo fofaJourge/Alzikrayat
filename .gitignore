@@ -14,3 +14,4 @@ config/database.php
 
 # Uploaded user photos
 public/images/uploads/*
+!public/images/uploads/.htaccess
