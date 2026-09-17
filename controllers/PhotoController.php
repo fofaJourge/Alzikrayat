@@ -127,12 +127,27 @@ class PhotoController extends Controller
             return;
         }
 
+     
         $fileCount = count($_FILES['photos']['name']);
 
-        if ($fileCount < 1) {
-            echo 'Please select at least one image.';
-            return;
-        }
+if ($fileCount < 1) {
+    echo 'Please select at least one image.';
+    return;
+}
+
+/*
+ * Limit the number of files processed in one request.
+ *
+ * Multiple uploads are supported, but limiting the batch size
+ * helps prevent excessive server resource usage.
+ */
+$maximumFilesPerUpload = 20;
+
+if ($fileCount > $maximumFilesPerUpload) {
+    echo 'You can upload a maximum of 20 images at once.';
+    return;
+}
+
 
         /*
          * Define the physical directory where uploaded images
